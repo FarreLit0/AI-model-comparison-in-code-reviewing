@@ -1,0 +1,6 @@
+{
+  "id": "naming",
+  "response": "1. Poor function name\nWhat the issue is: The function name `proc_data` is not descriptive.\nWhy it's a problem: A vague name can confuse people reading the code and does not convey the function's purpose clearly.\nHow to fix it: Rename the function to something more descriptive like `double_value`.\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 2.45,
+  "memory_used_bytes": 12480512
+}

@@ -6,9 +6,9 @@ import os
 
 API_KEY = ""
 
-code_path = "dataset/python/find_in_sorted.py"
-snippet_id = "find_in_sorted"
-output_path = f"claude_outputs/python/{snippet_id}.json"
+code_path = "dataset/python/bug/breadth_first_search.py"
+snippet_id = "breadth_first_search"
+output_path = f"claude_outputs/python/bug/{snippet_id}.json"
 
 # Read code
 with open(code_path, "r", encoding="utf-8") as f:

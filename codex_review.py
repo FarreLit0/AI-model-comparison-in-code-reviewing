@@ -8,9 +8,9 @@ import json
 openai.api_key = ""  # Use your actual API key here
 
 #Configuration
-snippet_id = "naming_and_magic"
-code_path = "dataset/python/naming_and_magic.py"
-output_path = f"codex_outputs/python/{snippet_id}.json"
+snippet_id = "unused_and_mutable"
+code_path = "dataset/python/code_quality/unused_and_mutable.py"
+output_path = f"codex_outputs/python/code_quality/{snippet_id}.json"
 
 #Load code from file
 with open(code_path, 'r', encoding='utf-8') as f:
