@@ -1,0 +1,6 @@
+{
+  "id": "naming_and_magic",
+  "response": "1.\nWhat the issue is: Magic number and fixed low-precision PI approximation.\nWhy it's a problem: The numerical literal 3.14159 is used directly in the calculation. This is a magic number as its meaning isn't immediately obvious without domain knowledge (though Pi is a common exception). Using a hardcoded value makes the code less readable and harder to maintain if the precision needs to be changed. It also uses a fixed, potentially low-precision approximation instead of the higher precision available in standard libraries. The comment \"# Poor naming\" likely refers to the lack of a meaningful name for this constant value.\nHow to fix it: Import the math module and replace 3.14159 with math.pi. This uses a well-known constant name for clarity and provides a higher precision value.\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 11.97,
+  "memory_used_bytes": 233472
+}
