@@ -1,6 +1,0 @@
-{
-  "id": "naming_and_magic",
-  "response": "1. What the issue is:\n   - Poor naming\n   Why it's a problem:\n   - The function name `calcArea` is not descriptive enough, particularly in absence of a comment or documentation explaining what \"area\" is being calculated. Here, it calculates the area of a circle from the radius `r`, so it should be reflected in a more descriptive name.\n   How to fix it:\n   - Rename the function to `calculate_circle_area` or something similar to make it clear that it calculates the area of a circle.\n\n2. What the issue is:\n   - Magic number\n   Why it's a problem:\n   - The number `3.14159` is used directly in the calculation. This is a hardcoded value for \u03c0 (pi), and using such \"magic numbers\" can make code difficult to read and maintain. If the value of \u03c0 needs to be more precise or updated, it's not clear that this is the value to change.\n   How to fix it:\n   - Import `pi` from Python's `math` module and use it in the calculation: `from math import pi` and change the return statement to `return pi * r * r`.\n\nTotal bugs: 0\nTotal quality issues: 2",
-  "response_time_sec": 5.24,
-  "memory_used_bytes": 12947456
-}

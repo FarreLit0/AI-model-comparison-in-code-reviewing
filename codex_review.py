@@ -20,7 +20,7 @@ with open(code_path, 'r', encoding='utf-8') as f:
 prompt = (
     "Analyze the following Python code and identify:\n"
     "Any logic or functional bugs (e.g. wrong comparisons, missing base cases, infinite loops).\n"
-    "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, unused variables, etc.).\n\n"
+    "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, inconsistent syntax, unused variables, etc.).\n\n"
     "For each issue:\n"
     "- Number it (1., 2., 3., ...)\n"
     "- Explain:\n"
