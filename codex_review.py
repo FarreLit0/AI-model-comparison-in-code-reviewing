@@ -8,9 +8,9 @@ import json
 openai.api_key = ""  # Use your actual API key here
 
 #Configuration
-snippet_id = "unused_and_mutable"
-code_path = "dataset/python/code_quality/unused_and_mutable.py"
-output_path = f"codex_outputs/python/code_quality/{snippet_id}.json"
+snippet_id = "sumRandomAsyncNums"
+code_path = "dataset/javascript/code_quality/sumRandomAsyncNums.js"
+output_path = f"codex_outputs/javascript/code_quality/{snippet_id}.json"
 
 #Load code from file
 with open(code_path, 'r', encoding='utf-8') as f:
@@ -18,7 +18,7 @@ with open(code_path, 'r', encoding='utf-8') as f:
 
 #Prompt for structured issue detection
 prompt = (
-    "Analyze the following Python code and identify:\n"
+    "Analyze the following javascript code and identify:\n"
     "Any logic or functional bugs (e.g. wrong comparisons, missing base cases, infinite loops).\n"
     "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, inconsistent syntax, unused variables, etc.).\n\n"
     "For each issue:\n"

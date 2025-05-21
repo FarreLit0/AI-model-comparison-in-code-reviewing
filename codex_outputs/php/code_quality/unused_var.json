@@ -1,0 +1,6 @@
+{
+  "id": "unused_var",
+  "response": "1. The variable `$unused` is declared but never used in the function. \nWhy it's a problem: Unused variables can confuse developers by suggesting that the variable has some relevance to the function's logic or outcome when it doesn\u2019t. \nHow to fix it: Remove the line `$unused = 10;` from the function.\n\n2. The name of the function `ask_number` might suggest that the function will validate the input or handle non-numeric input, but it does not do anything beyond reading a line. \nWhy it's a problem: Function naming should be descriptive of the actual functionality. A misleading name can lead to incorrect assumptions about what the function does.\nHow to fix it: Rename the function to something more descriptive of its action, such as `read_user_input` or add logic to validate the input as a number.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 4.12,
+  "memory_used_bytes": 12849152
+}

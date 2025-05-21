@@ -1,0 +1,6 @@
+{
+  "id": "mutable_default",
+  "response": "1. Issue: Default Parameter Usage\n   Explanation: Using a default parameter of an array in a function is unconventional and might lead to unexpected results if the function is used in a different context. It's better to require the user to pass a valid array for modification rather than initializing one inside the function.\n   Problem: It could confuse the function's intent and doesn't clearly communicate that an array is expected.\n   Fix: Remove the default `null` and require the caller to pass an array: `function append_value($value, &$list)`.\n\n2. Issue: Incorrect Return Type\n   Explanation: The function returns the `$list`, which might not be necessary since the list is passed by reference and any changes made inside the function would affect the caller's variable directly.\n   Problem: Returning the list can lead to redundancy and confusion about the purpose of using a reference parameter.\n   Fix: Consider whether the return statement is necessary. If not, remove it: `function append_value($value, &$list)` and remove the `return $list`.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 5.49,
+  "memory_used_bytes": 12890112
+}
