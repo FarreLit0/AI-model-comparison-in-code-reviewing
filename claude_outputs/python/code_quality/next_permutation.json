@@ -1,0 +1,6 @@
+{
+  "id": "next_permutation",
+  "response": "1. QUALITY - The function name 'next_permutation' is not very descriptive. A more informative name like 'find_next_lexicographic_permutation' would better convey the purpose of the function.\n\n2. QUALITY - The variable names 'perm', 'i', and 'j' are not very meaningful. More descriptive names like 'current_permutation', 'pivot_index', and 'swap_index' would improve code readability.\n\n3. QUALITY - The nested loop can be refactored to improve efficiency. Instead of iterating from the end of the permutation to find the swap index, you can use the bisect module to find the rightmost element greater than the pivot element.\n\n4. QUALITY - The function does not have any docstring or comments explaining its purpose, input, and output. Adding documentation would enhance the code's maintainability and make it easier for other developers to understand.\n\n5. BUG - The function returns None when there is no next permutation, which is correct. However, it would be more appropriate to raise a StopIteration exception to indicate that there are no more permutations.\n\n6. QUALITY - The code can be made more concise by using the built-in reversed() function instead of slicing with a step of -1.\n\nTotal bugs: 1\nTotal quality issues: 5",
+  "response_time_sec": 11.95,
+  "memory_used_bytes": 1150976
+}

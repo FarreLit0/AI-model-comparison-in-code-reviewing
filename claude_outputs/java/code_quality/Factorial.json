@@ -1,0 +1,6 @@
+{
+  "id": "Factorial",
+  "response": "QUALITY\n1. The class name \"Factorial\" doesn't follow the Java naming convention for classes. Class names should start with an uppercase letter and use CamelCase. To fix this, rename the class to \"FactorialCalculator\" or a similar meaningful name.\n\nQUALITY\n2. The method \"factorial\" doesn't handle negative input values. If a negative number is passed as an argument, the method will result in infinite recursion and eventually throw a StackOverflowError. To fix this, add a check for negative input and throw an IllegalArgumentException with an appropriate error message.\n\nThere are no bugs in the provided code.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 6.0,
+  "memory_used_bytes": 987136
+}

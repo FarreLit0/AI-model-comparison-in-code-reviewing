@@ -1,0 +1,6 @@
+{
+  "id": "MagicNumber",
+  "response": "1. QUALITY - Poor naming: The class name \"MagicNumber\" does not accurately represent the purpose of the class, which is to calculate a discount. A better name would be \"DiscountCalculator\" or similar, to clearly convey the class's responsibility.\n\n2. QUALITY - Magic number usage: The discount percentage (0.85) is used directly in the calculation without any explanation of what it represents. This makes the code less readable and maintainable. It should be extracted into a constant with a descriptive name, such as \"DISCOUNT_PERCENTAGE\".\n\n3. QUALITY - Missing documentation: The class and the method lack Javadoc comments or any form of documentation explaining their purpose, input parameters, and return values. Adding proper documentation would improve the code's readability and maintainability.\n\nTotal bugs: 0\nTotal quality issues: 3",
+  "response_time_sec": 7.52,
+  "memory_used_bytes": 831488
+}

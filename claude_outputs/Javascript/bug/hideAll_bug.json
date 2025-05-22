@@ -1,0 +1,6 @@
+{
+  "id": "hideAll_bug",
+  "response": "1. QUALITY - Inconsistent parameter naming: The parameter 'name' is used to refer to both a string value and a function, which can be confusing. Consider renaming the parameter to clarify its purpose.\n\n2. QUALITY - Redundant type checks: The code checks if 'config' is a function twice. Consider consolidating these checks to improve code readability and maintainability.\n\n3. QUALITY - Magic string: The string \"HIDE_TRANSITION\" is used directly in the code. Consider defining it as a constant at the top of the file to improve code maintainability and readability.\n\n4. QUALITY - Inconsistent return statements: The function returns 'this' in one branch but does not explicitly return anything in the other branch. Consider adding a consistent return statement for clarity.\n\n5. QUALITY - Lack of error handling: The code assumes that 'Y.Transition' and 'this.transition' exist and does not handle cases where they might be undefined. Consider adding appropriate error handling or null checks.\n\n6. QUALITY - Unclear variable names: The variable names 'name' and 'config' are generic and do not provide much context about their purpose. Consider using more descriptive names to improve code readability.\n\nTotal bugs: 0\nTotal quality issues: 6",
+  "response_time_sec": 11.15,
+  "memory_used_bytes": 1077248
+}

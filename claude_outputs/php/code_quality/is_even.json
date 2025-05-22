@@ -1,0 +1,6 @@
+{
+  "id": "is_even",
+  "response": "1. QUALITY - Function naming: The function name \"is_even\" does not follow the PSR-1 and PSR-2 coding standards, which recommend using camelCase for function names. To fix this, rename the function to \"isEven\".\n\n2. QUALITY - Unnecessary closing PHP tag: The closing PHP tag \"?>\" is unnecessary at the end of the file and can potentially cause issues with output buffering. It's best practice to omit the closing PHP tag in files that contain only PHP code. Remove the closing PHP tag to resolve this.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 5.75,
+  "memory_used_bytes": 925696
+}

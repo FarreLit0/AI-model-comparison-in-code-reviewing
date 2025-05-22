@@ -1,0 +1,6 @@
+{
+  "id": "powerset",
+  "response": "1. QUALITY - Naming: The variable names \"arr\", \"first\", and \"rest\" are not descriptive enough. More meaningful names like \"elements\", \"first_element\", and \"remaining_elements\" would improve code readability and maintainability.\n   - Fix: Rename the variables to more descriptive names.\n\n2. QUALITY - Documentation: The function lacks a docstring explaining its purpose, input parameters, and return value. Adding a docstring would make the code more understandable and maintainable.\n   - Fix: Add a docstring to the function describing its functionality.\n\nThere are no bugs in the given code.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 6.49,
+  "memory_used_bytes": 1077248
+}

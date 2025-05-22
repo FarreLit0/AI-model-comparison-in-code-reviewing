@@ -1,0 +1,6 @@
+{
+  "id": "kheapsort",
+  "response": "1. QUALITY - Naming:\n   - The function name \"kheapsort\" is unclear and doesn't follow the Python naming convention for functions.\n   - It should be renamed to something more descriptive, like \"k_heap_sort\", and follow the snake_case convention.\n\n2. QUALITY - Docstring:\n   - The function lacks a docstring explaining its purpose, parameters, and return value.\n   - Adding a clear docstring improves code readability and maintainability.\n\nThe code appears to be free of bugs and functions correctly.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 5.56,
+  "memory_used_bytes": 1101824
+}

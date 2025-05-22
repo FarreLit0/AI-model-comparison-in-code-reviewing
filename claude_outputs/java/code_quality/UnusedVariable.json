@@ -1,0 +1,6 @@
+{
+  "id": "UnusedVariable",
+  "response": "1. QUALITY - Unused variable: The variable 'unused' is declared but never used in the 'square' method. Unused variables clutter the code and can confuse readers. Remove the unused variable declaration.\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 3.14,
+  "memory_used_bytes": 1060864
+}

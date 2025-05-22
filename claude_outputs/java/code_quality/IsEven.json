@@ -1,0 +1,6 @@
+{
+  "id": "IsEven",
+  "response": "No bugs found.\n\nQUALITY\n1. Class name should be more descriptive\n   - The class name \"IsEven\" doesn't fully convey the purpose of the class.\n   - A more descriptive name like \"EvenNumberChecker\" would improve clarity.\n   - Rename the class to \"EvenNumberChecker\" or a similar descriptive name.\n\n2. Method can be static\n   - The \"isEven\" method doesn't rely on any instance variables or methods.\n   - It can be declared as a static method since it only depends on the input parameter.\n   - Add the \"static\" keyword to the method declaration: public static boolean isEven(int number).\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 6.4,
+  "memory_used_bytes": 884736
+}

@@ -1,0 +1,6 @@
+{
+  "id": "naming",
+  "response": "1. QUALITY - Function naming: The function name \"proc_data\" is not descriptive and does not clearly convey what the function does. It would be better to use a more meaningful name like \"double_value\" or \"multiply_by_two\" to improve code readability and maintainability.\n\nExplanation:\n- The function name \"proc_data\" is not descriptive enough.\n- A non-descriptive name makes it harder to understand the purpose of the function without reading its implementation.\n- Renaming the function to something more meaningful like \"double_value\" or \"multiply_by_two\" would make the code more self-explanatory.\n\nThere are no bugs in the provided code.\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 7.23,
+  "memory_used_bytes": 991232
+}
