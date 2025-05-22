@@ -1,0 +1,6 @@
+{
+  "id": "Nesting",
+  "response": "1. Category: BUG\n   - Explanation:\n     - What the issue is: The method only prints \"Even\" if x is both positive, less than 100, and even. There is no output for other scenarios.\n     - Why it\u2019s a problem: The function lacks any output or response for inputs that are odd or outside the range 0 to 100, which might not be the expected behavior if the function is intended to validate numbers or inform about each case.\n     - How to fix it: Add else statements to handle cases where x is not even, less than 0, or greater than or equal to 100, depending on the intended functionality.\n\n2. Category: QUALITY\n   - Explanation:\n     - What the issue is: Deep nested if-else statements.\n     - Why it\u2019s a problem: Excessive nesting can make the code difficult to read, understand, and maintain.\n     - How to fix it: Use logical AND operators to combine conditions, making the code flat and easier to follow, e.g., `if (x > 0 && x < 100 && x % 2 == 0)`.\n\nTotal bugs: 1\nTotal quality issues: 1",
+  "response_time_sec": 5.11,
+  "memory_used_bytes": 12648448
+}

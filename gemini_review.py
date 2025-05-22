@@ -8,9 +8,9 @@ import os
 client = genai.Client(api_key="")
 
 # File and output setup
-code_path = "dataset/python/common.py"
-snippet_id = "common"
-output_path = f"gemini_outputs/python/{snippet_id}.json"
+code_path = "dataset/cpp/bug/fun.cpp"
+snippet_id = "fun"
+output_path = f"gemini_outputs/cpp/bug/{snippet_id}.json"
 
 # Load code
 with open(code_path, "r", encoding="utf-8") as f:
@@ -18,20 +18,22 @@ with open(code_path, "r", encoding="utf-8") as f:
 
 # Prompt
 prompt = (
-    "Analyze the following Python code and identify:\n"
-    "Any logic or functional bugs (e.g. wrong comparisons, missing base cases, infinite loops).\n"
-    "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, inconsistent syntax, unused variables, etc.).\n\n"
-    "For each issue:\n"
-    "- Number it (1., 2., 3., ...)\n"
-    "- Explain:\n"
-    "What the issue is\n"
-    "Why it's a problem\n"
-    "How to fix it\n\n"
-    "If there are no bugs or issues, clearly state that.\n\n"
+    "Analyze the following python code and identify all issues.\n\n"
+    "Group them into two categories:\n"
+    "1. Bugs – Any logic errors, functional mistakes, incorrect behavior, or general programming bugs.\n"
+    "2. Code quality issues – Bad practices, poor naming, redundancy, or maintainability problems.\n\n"
+    "For each issue, list:\n"
+    "- Category: BUG or QUALITY\n"
+    "- Numbered format (1., 2., ...)\n"
+    "- Explanation:\n"
+    "  - What the issue is\n"
+    "  - Why it’s a problem\n"
+    "  - How to fix it\n\n"
+    "If there are no bugs or quality issues, clearly state that.\n\n"
     "At the end, write exactly:\n"
     "Total bugs: <number>\n"
     "Total quality issues: <number>\n\n"
-    "Do not include the original code again, and do not use markdown formatting.\n\n"
+    "Do not restate the original code or use markdown formatting.\n\n"
     f"{code}"
     )
 

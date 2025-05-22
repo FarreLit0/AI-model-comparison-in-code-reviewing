@@ -1,5 +1,5 @@
 
-public class JavaClean05_Average {
+public class Average {
     public static double average(int[] numbers) {
         if (numbers.length == 0) return 0;
         int sum = 0;

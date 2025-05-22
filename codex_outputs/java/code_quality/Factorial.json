@@ -1,0 +1,6 @@
+{
+  "id": "Factorial",
+  "response": "1. Category: BUG\n   - Explanation:\n     - What the issue is: The code does not handle negative integers. If a negative integer is passed to the factorial method, it will cause a stack overflow due to infinite recursion.\n     - Why it\u2019s a problem: Factorials are only defined for non-negative integers, and the current implementation will not handle negative input gracefully.\n     - How to fix it: Add an input validation check to return an error or default value (such as 1 or a message) when the input is negative.\n\n2. Category: QUALITY\n   - Explanation:\n     - What the issue is: The method signature does not handle edge cases or special inputs explicitly.\n     - Why it\u2019s a problem: Users of this class might not be aware of what to expect if zero or potentially other values are passed. Documentation or clearer method signatures help maintain readability and correctness.\n     - How to fix it: Consider adding JavaDocs or comments to describe the method behavior, assumptions, and any constraints, such as expected input range.\n\nTotal bugs: 1\nTotal quality issues: 1",
+  "response_time_sec": 5.32,
+  "memory_used_bytes": 12869632
+}

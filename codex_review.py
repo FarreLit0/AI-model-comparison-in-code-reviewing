@@ -8,9 +8,9 @@ import json
 openai.api_key = ""  # Use your actual API key here
 
 #Configuration
-snippet_id = "sumRandomAsyncNums"
-code_path = "dataset/javascript/code_quality/sumRandomAsyncNums.js"
-output_path = f"codex_outputs/javascript/code_quality/{snippet_id}.json"
+snippet_id = "wrap"
+code_path = "dataset/python/bug/wrap.py"
+output_path = f"codex_outputs/python/bug/{snippet_id}.json"
 
 #Load code from file
 with open(code_path, 'r', encoding='utf-8') as f:
@@ -18,20 +18,22 @@ with open(code_path, 'r', encoding='utf-8') as f:
 
 #Prompt for structured issue detection
 prompt = (
-    "Analyze the following javascript code and identify:\n"
-    "Any logic or functional bugs (e.g. wrong comparisons, missing base cases, infinite loops).\n"
-    "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, inconsistent syntax, unused variables, etc.).\n\n"
-    "For each issue:\n"
-    "- Number it (1., 2., 3., ...)\n"
-    "- Explain:\n"
-    "What the issue is\n"
-    "Why it's a problem\n"
-    "How to fix it\n\n"
-    "If there are no bugs or issues, clearly state that.\n\n"
+    "Analyze the following python code and identify all issues.\n\n"
+    "Group them into two categories:\n"
+    "1. Bugs – Any logic errors, functional mistakes, incorrect behavior, or general programming bugs.\n"
+    "2. Code quality issues – Bad practices, poor naming, redundancy, or maintainability problems.\n\n"
+    "For each issue, list:\n"
+    "- Category: BUG or QUALITY\n"
+    "- Numbered format (1., 2., ...)\n"
+    "- Explanation:\n"
+    "  - What the issue is\n"
+    "  - Why it’s a problem\n"
+    "  - How to fix it\n\n"
+    "If there are no bugs or quality issues, clearly state that.\n\n"
     "At the end, write exactly:\n"
     "Total bugs: <number>\n"
     "Total quality issues: <number>\n\n"
-    "Do not include the original code again, and do not use markdown formatting.\n\n"
+    "Do not restate the original code or use markdown formatting.\n\n"
     f"{code}"
 )
 
@@ -43,7 +45,7 @@ mem_before = process.memory_info().rss
 #API call
 response = openai.chat.completions.create(
     model="gpt-4o",
-    max_tokens= 512,
+    max_tokens= 1024,
     messages=[
         {"role": "user", "content": prompt}
     ]

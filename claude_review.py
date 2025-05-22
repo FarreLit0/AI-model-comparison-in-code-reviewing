@@ -6,19 +6,20 @@ import os
 
 API_KEY = ""
 
-code_path = "dataset/python/bug/breadth_first_search.py"
-snippet_id = "breadth_first_search"
-output_path = f"claude_outputs/python/bug/{snippet_id}.json"
+code_path = "dataset/cpp/bug/const.cpp"
+snippet_id = "const"
+output_path = f"claude_outputs/cpp/bug/{snippet_id}.json"
 
 # Read code
 with open(code_path, "r", encoding="utf-8") as f:
     code = f.read()
 
 prompt = (
-    "Analyze the following Python code and identify:\n"
+    "Analyze the following c++ code and identify:\n"
     "Any logic or functional bugs (e.g. wrong comparisons, missing base cases, infinite loops).\n"
     "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, inconsistent syntax, unused variables, etc.).\n\n"
-    "For each issue:\n"
+    "For each logic bug or functional bug and code quality issue:\n"
+    "specify if it's either logic or functional bug, or code quality issue\n"
     "- Number it (1., 2., 3., ...)\n"
     "- Explain:\n"
     "What the issue is\n"
@@ -40,7 +41,7 @@ headers = {
 
 payload = {
     "model": "claude-3-opus-20240229",
-    "max_tokens": 512,
+    "max_tokens": 1024,
     "messages": [
         {
             "role": "user",

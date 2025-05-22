@@ -8,9 +8,9 @@ import os
 client = Together(api_key="")
 
 # Setup paths
-code_path = "dataset/python/find_in_sorted.py"
-snippet_id = "find_in_sorted"
-output_path = f"mistral_outputs/python/{snippet_id}.json"
+code_path = "dataset/cpp/bug/const.cpp"
+snippet_id = "const"
+output_path = f"mistral_outputs/cpp/bug/{snippet_id}.json"
 
 # Read code
 with open(code_path, "r", encoding="utf-8") as f:
@@ -18,10 +18,11 @@ with open(code_path, "r", encoding="utf-8") as f:
 
 # Prompt
 prompt = (
-    "Analyze the following Python code and identify:\n"
+    "Analyze the following c++ code and identify:\n"
     "Any logic or functional bugs (e.g. wrong comparisons, missing base cases, infinite loops).\n"
     "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, inconsistent syntax, unused variables, etc.).\n\n"
-    "For each issue:\n"
+    "For each logic bug or functional bug and code quality issue:\n"
+    "specify if it's either logic or functional bug, or code quality issue\n"
     "- Number it (1., 2., 3., ...)\n"
     "- Explain:\n"
     "What the issue is\n"
@@ -44,7 +45,7 @@ response = client.chat.completions.create(
     messages=[
         {"role": "user", "content": prompt}
     ],
-    max_tokens=512,
+    max_tokens=1024,
     temperature=0.7,
     top_p=0.9
 )

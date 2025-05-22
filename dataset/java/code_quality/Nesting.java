@@ -1,5 +1,5 @@
 
-public class JavaBad02_Nesting {
+public class Nesting {
     public static void check(int x) {
         if (x > 0) {
             if (x < 100) {

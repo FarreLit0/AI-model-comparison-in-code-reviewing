@@ -1,0 +1,6 @@
+{
+  "id": "MagicNumber",
+  "response": "1. Category: BUG\n   - Explanation:\n     - Issue: The calculateDiscount method applies a fixed 15% discount (using the magic number 0.85) without allowing for flexibility.\n     - Why it\u2019s a problem: This approach assumes the discount is always 15%, which may not align with business rules if the discount rate needs to change in the future.\n     - How to fix it: Introduce a parameter for the discount rate and use it in the calculation. For example: `public static double calculateDiscount(double price, double discountRate) { return price * discountRate; }`.\n\n2. Category: QUALITY\n   - Explanation:\n     - Issue: Usage of a magic number (0.85) directly in the code without explanation.\n     - Why it\u2019s a problem: Magic numbers make the code less readable and maintainable as their purpose is not immediately clear.\n     - How to fix it: Define a constant with a meaningful name. For example: `private static final double DEFAULT_DISCOUNT_RATE = 0.85;` and use it in the method: `return price * DEFAULT_DISCOUNT_RATE;`.\n\nTotal bugs: 1\nTotal quality issues: 1",
+  "response_time_sec": 5.09,
+  "memory_used_bytes": 12685312
+}
