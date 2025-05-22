@@ -1,0 +1,6 @@
+{
+  "id": "UnusedVariable",
+  "response": "1. QUALITY issue - Redundancy\n   - Explanation: The variable `unused` is declared but never used. This makes the code harder to understand and maintain.\n   - Fix: Remove the unused variable.\n\n2. QUALITY issue - Naming\n   - Explanation: The method name `square` does not accurately reflect the purpose of the method, as it returns the square of the input, not just a square. A more descriptive name like `calculateSquare` would be more appropriate.\n   - Fix: Rename the method to a more descriptive name, such as `calculateSquare`.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 1.16,
+  "memory_used_bytes": 1052672
+}

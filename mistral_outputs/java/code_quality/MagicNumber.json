@@ -1,0 +1,6 @@
+{
+  "id": "MagicNumber",
+  "response": "1. BUG\n   - Explanation:\n     - The function `calculateDiscount` is supposed to calculate a discounted price, but it's currently calculating 85% of the input price instead of the intended 15% discount.\n     - Why it\u2019s a problem: It will give incorrect results for the discounted price.\n     - How to fix it: Multiply the input price by 0.15 instead of 0.85.\n\n2. QUALITY\n   - Explanation:\n     - The function name `calculateDiscount` is misleading because it implies that it calculates a percentage discount, but it actually calculates a multiplicative discount.\n     - Why it\u2019s a problem: It makes the function less intuitive and harder to understand for other developers.\n     - How to fix it: Rename the function to something more descriptive, like `applyDiscount`.\n\nTotal bugs: 1\nTotal quality issues: 1",
+  "response_time_sec": 1.8,
+  "memory_used_bytes": 1126400
+}

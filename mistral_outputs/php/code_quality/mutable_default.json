@@ -1,0 +1,6 @@
+{
+  "id": "mutable_default",
+  "response": "**Category**: QUALITY\n**Number**: 1.\n**Explanation**:\n- The function signature allows for an optional `$list` parameter, but the default value is not passed by reference. This means that any changes made to the `$list` variable within the function will not be reflected outside of it.\n- To fix this, pass the default value by reference: `function append_value(&$value, &$list = array()) { ... }`\n\n**Category**: QUALITY\n**Number**: 2.\n**Explanation**:\n- The function name `append_value` suggests that it appends a single value to an array, but it actually appends multiple values. This could lead to confusion.\n- To fix this, consider renaming the function to something more descriptive, such as `appendValuesToArray` or `addToArray`.\n\n**Category**: QUALITY\n**Number**: 3.\n**Explanation**:\n- The function does not return a boolean indicating whether the operation was successful. This could make it harder to use the function in certain contexts, such as when checking if an array was successfully modified.\n- To fix this, add a return statement after the function body to indicate whether the operation was successful: `if (empty($list)) return false; return $list;`\n\n**Total bugs**: 0\n**Total quality issues**: 3",
+  "response_time_sec": 1.86,
+  "memory_used_bytes": 1196032
+}

@@ -1,0 +1,6 @@
+{
+  "id": "customFilter",
+  "response": "Total bugs: 0\nTotal quality issues: 1\n\n1. (QUALITY)\n   - Issue: Lack of consistency in department names\n   - Why it\u2019s a problem: It can be confusing when department names are not consistent. For example, \"Pizza Delivery\" could be renamed to \"Food Services\" for better clarity.\n   - How to fix it: Rename the department of the \"Pizza Delivery\" employee to something like \"Food Services\" or any other consistent name.\n\nHere is the updated code:\n\nlet employees = [\n    { name: \"Nikunj\", id: 1, department: \"IT\" },\n    { name: \"Arti\", id: 2, department: \"Food Services\" },\n    { name: \"Dhruv\", id: 3, department: \"IT\" },\n    { name: \"Yash\", id: 4, department: \"Editing\" }\n];\n\nconst customFilter = (arr, predicate) => {\n    return arr.reduce((acc, item) => {\n        if (predicate(item)) {\n            acc.push(item);\n        }\n        return acc;\n    }, []);\n};\n\nlet filtered = customFilter(employees, employee => employee.department === \"IT\");\nconsole.log(filtered);",
+  "response_time_sec": 1.79,
+  "memory_used_bytes": 1208320
+}

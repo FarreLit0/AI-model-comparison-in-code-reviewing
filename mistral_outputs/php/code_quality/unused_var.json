@@ -1,0 +1,6 @@
+{
+  "id": "unused_var",
+  "response": "**Category**: QUALITY\n**1.**: Unused variable - `$unused`\n   - Explanation: The variable `$unused` is declared but never used within the function, making the code less readable and potentially confusing.\n   - Fix: Remove the unused variable or give it a purpose if possible.\n\n**Category**: QUALITY\n**2.**: Inconsistent naming conventions - Function name and variable name\n   - Explanation: The function name `ask_number()` is a verb, while the variable `$prompt` is a noun. It would be more consistent to name the variable something like `$question`.\n   - Fix: Rename the variable to better match the function name.\n\n**Category**: QUALITY\n**3.**: Lack of input validation\n   - Explanation: There is no validation for the input received from `readline()`. This means that the function will return any user input, including non-numeric values, which may cause issues further in the code.\n   - Fix: Implement input validation to ensure that the function only returns numeric values.\n\n**Total bugs**: 0\n**Total quality issues**: 3",
+  "response_time_sec": 1.9,
+  "memory_used_bytes": 1212416
+}

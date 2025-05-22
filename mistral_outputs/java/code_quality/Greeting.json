@@ -1,0 +1,6 @@
+{
+  "id": "Greeting",
+  "response": "1. (QUALITY)\n   - Explanation:\n     - The method name `greet` suggests that it should perform more than just concatenating a string. This naming convention is not clear and could be misleading to other developers.\n   - Fix:\n     - Rename the method to something more descriptive, such as `formatGreeting`.\n\n2. (QUALITY)\n   - Explanation:\n     - The method does not handle edge cases, such as when `name` is null or an empty string.\n   - Fix:\n     - Add appropriate checks for null or empty strings and return a default message or throw an exception.\n\n3. (BUG)\n   - Explanation:\n     - The method does not check if the `name` argument is of the correct type. If a non-string is passed, it will cause a runtime error.\n   - Fix:\n     - Add type checking to the method signature or use generics.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 1.49,
+  "memory_used_bytes": 950272
+}

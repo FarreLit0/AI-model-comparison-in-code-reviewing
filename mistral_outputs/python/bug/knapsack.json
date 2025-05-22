@@ -1,0 +1,6 @@
+{
+  "id": "knapsack",
+  "response": "Total bugs: 0\nTotal quality issues: 1\n\n1. Category: QUALITY\n   - Number: 1\n   - Explanation:\n     - Issue: Lack of docstrings or comments\n     - Why it\u2019s a problem:\n       - Good documentation is essential for understanding the code, especially for others who might work with it.\n     - How to fix it:\n       - Add a docstring explaining the purpose of the function and its parameters, and add comments within the code to explain complex logic or decisions.\n\nThe code itself does not have any bugs. It correctly implements the 0/1 Knapsack problem using dynamic programming, and it returns the maximum value that can be obtained with the given capacity and items. However, it lacks proper documentation, which is a common quality issue in code.",
+  "response_time_sec": 1.42,
+  "memory_used_bytes": 1044480
+}

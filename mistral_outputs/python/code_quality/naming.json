@@ -1,0 +1,6 @@
+{
+  "id": "naming",
+  "response": "Here are the issues found in the provided Python code:\n\n1. BUG\n   - Explanation: The function `proc_data` does not handle the case when `x` is not an integer. This will lead to a TypeError when non-integer values are passed.\n   - Fix: Use the `isinstance` function to check if `x` is an integer before performing the multiplication.\n\n2. QUALITY\n   - Explanation: The function name `proc_data` is not descriptive enough. It does not clearly indicate what the function does (i.e., doubling a number).\n   - Fix: Rename the function to something more descriptive, such as `double_number`.\n\n3. QUALITY\n   - Explanation: There is no docstring explaining what the function does or any necessary input/output details.\n   - Fix: Add a docstring to the function that clearly describes its purpose and any necessary information about its usage.\n\nTotal bugs: 1\nTotal quality issues: 2",
+  "response_time_sec": 1.5,
+  "memory_used_bytes": 909312
+}

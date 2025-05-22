@@ -1,0 +1,6 @@
+{
+  "id": "Factorial",
+  "response": "1. (BUG)\n   - Category: BUG\n   - Explanation:\n     - The code for calculating the factorial of a number doesn't handle the case when `n` is negative. This results in an incorrect behavior for negative numbers.\n     - Problem: The function can throw an `ArithmeticException` when multiplying by zero if a negative number is passed.\n     - Fix: Add a check to ensure `n` is non-negative before calculating the factorial.\n\n2. (QUALITY)\n   - Category: QUALITY\n   - Explanation:\n     - The method `factorial(int n)` doesn't provide any documentation about its purpose or expected behavior.\n     - Problem: Lack of documentation makes the code harder to understand and maintain for others.\n     - Fix: Add Javadoc comments to the method describing its purpose and expected behavior.\n\n3. (QUALITY)\n   - Category: QUALITY\n   - Explanation:\n     - The class name `Factorial` doesn't follow the Java naming convention for classes, which is to use PascalCase.\n     - Problem: Inconsistent naming makes the code harder to read and understand.\n     - Fix: Rename the class to `Factorial` using PascalCase.\n\nTotal bugs: 1\nTotal quality issues: 2",
+  "response_time_sec": 1.99,
+  "memory_used_bytes": 995328
+}

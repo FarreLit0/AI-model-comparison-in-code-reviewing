@@ -1,0 +1,6 @@
+{
+  "id": "array_filter",
+  "response": "1. BUG\n   - Explanation: The function `filterArray` is supposed to return an array, but if the value in `$arr` is less than or equal to `$limit`, it overwrites the `$result` array with a single value instead of continuing to populate the array.\n   - Fix: Change the line `$result = $val;` to `continue;`.\n\n2. BUG\n   - Explanation: The function does not correctly filter the array. If there are multiple values in the array greater than `$limit`, only the first one will be returned.\n   - Fix: Change the line `$result[] = $val;` to `$result[] = $val; continue;`.\n\n3. QUALITY\n   - Explanation: The function name `filterArray` is not descriptive enough. It would be more appropriate to name it something like `getValuesGreaterThanLimit`.\n   - Fix: Rename the function to `getValuesGreaterThanLimit`.\n\n4. QUALITY\n   - Explanation: The function does not handle the case when `$arr` is an empty array. It will throw a notice.\n   - Fix: Add a check for an empty array at the beginning of the function and return an empty array in that case.\n\nTotal bugs: 2\nTotal quality issues: 2",
+  "response_time_sec": 2.22,
+  "memory_used_bytes": 1073152
+}

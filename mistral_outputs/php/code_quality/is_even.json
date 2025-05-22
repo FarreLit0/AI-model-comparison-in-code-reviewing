@@ -1,0 +1,6 @@
+{
+  "id": "is_even",
+  "response": "This PHP code contains only one code quality issue, as it does not have any logical errors or bugs.\n\n1. Category: QUALITY\n   - Number: 1\n   - Explanation:\n     - What the issue is: The function name could be more descriptive.\n     - Why it\u2019s a problem: A more descriptive function name makes it easier for others to understand the purpose of the function at a glance.\n     - How to fix it: Rename the function to something like `checkIfNumberIsEven`.\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 1.41,
+  "memory_used_bytes": 1040384
+}

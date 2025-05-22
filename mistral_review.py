@@ -8,9 +8,9 @@ import os
 client = Together(api_key="")
 
 # Setup paths
-code_path = "dataset/cpp/bug/const.cpp"
-snippet_id = "const"
-output_path = f"mistral_outputs/cpp/bug/{snippet_id}.json"
+code_path = "dataset/cpp/code_quality/tuples.cpp"
+snippet_id = "tuples"
+output_path = f"mistral_outputs/cpp/code_quality/{snippet_id}.json"
 
 # Read code
 with open(code_path, "r", encoding="utf-8") as f:
@@ -18,21 +18,22 @@ with open(code_path, "r", encoding="utf-8") as f:
 
 # Prompt
 prompt = (
-    "Analyze the following c++ code and identify:\n"
-    "Any logic or functional bugs (e.g. wrong comparisons, missing base cases, infinite loops).\n"
-    "Any code quality issues (e.g. poor naming, deep nesting, magic numbers, bad style, inconsistent syntax, unused variables, etc.).\n\n"
-    "For each logic bug or functional bug and code quality issue:\n"
-    "specify if it's either logic or functional bug, or code quality issue\n"
-    "- Number it (1., 2., 3., ...)\n"
-    "- Explain:\n"
-    "What the issue is\n"
-    "Why it's a problem\n"
-    "How to fix it\n\n"
-    "If there are no bugs or issues, clearly state that.\n\n"
+    "Analyze the following c++ code and identify all issues.\n\n"
+    "Group them into two categories:\n"
+    "1. Bugs – Any logic errors, functional mistakes, incorrect behavior, or general programming bugs.\n"
+    "2. Code quality issues – Bad practices, poor naming, redundancy, or maintainability problems.\n\n"
+    "For each issue, list:\n"
+    "- Category: BUG or QUALITY\n"
+    "- Numbered format (1., 2., ...)\n"
+    "- Explanation:\n"
+    "  - What the issue is\n"
+    "  - Why it’s a problem\n"
+    "  - How to fix it\n\n"
+    "If there are no bugs or quality issues, clearly state that.\n\n"
     "At the end, write exactly:\n"
     "Total bugs: <number>\n"
     "Total quality issues: <number>\n\n"
-    "Do not include the original code again, and do not use markdown formatting.\n\n"
+    "Do not restate the original code or use markdown formatting.\n\n"
     f"{code}"
 )
 

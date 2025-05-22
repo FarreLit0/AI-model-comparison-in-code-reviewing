@@ -1,0 +1,6 @@
+{
+  "id": "greet",
+  "response": "**Category:** QUALITY\n**1.** Poor function naming\n   - The function name `greet` is not descriptive enough. It would be better to name it `sayHello` or `getFormattedGreeting`.\n   - Why it\u2019s a problem: Poor naming can make the code less self-explanatory and harder to understand for other developers.\n   - How to fix it: Rename the function to something more descriptive.\n\n**Category:** QUALITY\n**2.** Lack of error handling\n   - The function does not check if the `$name` variable is set before using it.\n   - Why it\u2019s a problem: If `$name` is not set, the function will throw an undefined variable notice or error, which can affect the overall behavior of the script.\n   - How to fix it: Check if `$name` is set before using it and handle the case when it's not.\n\n**Category:** BUG\n**3.** Incorrect behavior with empty `$name`\n   - The function will return an empty string if `$name` is empty.\n   - Why it\u2019s a problem: This might not be the intended behavior, and it could lead to unexpected results when the function is used in certain contexts.\n   - How to fix it: Add a check for an empty `$name` and return a default greeting or an error message instead.\n\nTotal bugs: 1\nTotal quality issues: 2",
+  "response_time_sec": 2.03,
+  "memory_used_bytes": 1097728
+}
