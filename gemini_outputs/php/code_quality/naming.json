@@ -1,0 +1,6 @@
+{
+  "id": "naming",
+  "response": "Category: QUALITY\n1. Explanation: Function name 'dOaCt' is meaningless.\n   - What the issue is: The function name gives no indication of what the function does.\n   - Why it’s a problem: Makes code difficult to understand and maintain.\n   - How to fix it: Rename the function to something descriptive, like 'addNumbers'.\n\n2. Explanation: Variable names 'x', 'y', and 'z' are not descriptive.\n   - What the issue is: Using single-letter variable names makes the code harder to understand.\n   - Why it’s a problem: It's unclear what these variables represent.\n   - How to fix it: Use descriptive variable names like 'number1', 'number2', and 'sum'.\n\nCategory: BUG\nNo bugs found.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 1.49,
+  "memory_used_bytes": 114688
+}

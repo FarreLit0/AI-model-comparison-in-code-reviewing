@@ -1,0 +1,6 @@
+{
+  "id": "unused_and_mutable",
+  "response": "1. Category: BUG\n- Explanation: The `data` parameter has a default value of `[]`, which is mutable. This means that the same list is used across multiple calls to the function, leading to unexpected behavior where the list grows with each call, even if the caller doesn't explicitly pass in a list.\n- Why it’s a problem: This violates the principle of least astonishment. The caller would expect a new list to be created each time the function is called without providing the `data` argument, however this is not the case.\n- How to fix it: Initialize `data` to `None` and create an empty list within the function if `data` is `None`.\n\n2. Category: QUALITY\n- Explanation: The variable `tmp` is assigned the value `42` but is never used.\n- Why it’s a problem: It is unnecessary code that clutters the function and potentially confuses readers.\n- How to fix it: Remove the line `tmp = 42`.\n\nTotal bugs: 1\nTotal quality issues: 1",
+  "response_time_sec": 1.83,
+  "memory_used_bytes": 69632
+}

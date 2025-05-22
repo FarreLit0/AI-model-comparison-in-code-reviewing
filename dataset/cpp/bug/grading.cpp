@@ -19,18 +19,18 @@ int main()
 /* errors start here */
 int grade(double test, double exam){
         double mark=test+70*exam/50;
-       Return (mark+.5)  /// Two syntax errors. no ; and Return should be return.
+       Return (mark+.5)
 }
-        double getMark(maxMark){ // One syntax error, no double maxMark.
+        double getMark(maxMark){
             double theMark;
             
-            while(theMark>=0. &&theMark<=maxMark){ // Possible logic error, grades should only say out of range if they are under 0, or above maxMark. Tried fixing but code won't compile.
+            while(theMark>=0. &&theMark<=maxMark){ 
             
             cout<<endl<<"that's out of range.";
             
             cout<<"please input a mark on [0, "<<maxMark<<"]:";
             
-            cin<< theMark; // One syntax error. cin should be cin>> not cin<<.
+            cin<< theMark;
 }
 return theMark;
 }

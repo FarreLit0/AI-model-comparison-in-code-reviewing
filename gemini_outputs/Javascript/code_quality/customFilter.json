@@ -1,0 +1,6 @@
+{
+  "id": "customFilter",
+  "response": "1. QUALITY\n- Explanation: Using `reduce` for filtering is less readable and less performant than using `filter`. `filter` is designed specifically for this purpose.\n- Why it’s a problem: `reduce` requires more code and is less immediately obvious in its intent. `filter` is more direct, concise, and often optimized by JavaScript engines.\n- How to fix it: Replace `reduce` with `filter`: `return arr.filter(predicate);`\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 1.18,
+  "memory_used_bytes": 172032
+}

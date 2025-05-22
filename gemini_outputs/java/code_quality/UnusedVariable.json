@@ -1,0 +1,6 @@
+{
+  "id": "UnusedVariable",
+  "response": "Category: QUALITY\n1. Explanation: Unused variable 'unused'.\n   - What the issue is: The variable `unused` is declared and initialized but never used within the `square` method.\n   - Why it’s a problem: It makes the code look cluttered, wastes memory, and might confuse readers into thinking it has a purpose.\n   - How to fix it: Remove the declaration and initialization of the `unused` variable.\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 1.09,
+  "memory_used_bytes": 73728
+}

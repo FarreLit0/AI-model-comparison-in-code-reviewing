@@ -1,0 +1,6 @@
+{
+  "id": "Greeting",
+  "response": "1. Category: QUALITY\nExplanation:\n- What the issue is: The class lacks Javadoc comments.\n- Why it’s a problem: Lack of documentation makes it harder for others to understand the purpose of the class and method, reducing maintainability.\n- How to fix it: Add Javadoc comments to the class and method explaining their purpose.\n\n2. Category: QUALITY\nExplanation:\n- What the issue is: The class and method are too simple and might not justify their existence if used in very simple context.\n- Why it’s a problem: Over-engineering can lead to unnecessary complexity.\n- How to fix it: Consider inlining the functionality if it's used very sparsely and doesn't warrant a dedicated class.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 1.39,
+  "memory_used_bytes": 73728
+}

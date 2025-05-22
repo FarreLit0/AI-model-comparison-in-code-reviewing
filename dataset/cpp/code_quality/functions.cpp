@@ -6,29 +6,21 @@
 
 
 int main() {
-    //[alloc Pointer to an int on the heap
     int *x = new int(5);
-    //]
 
-    //[print Print pointer address
     std::cout << "x: " << x << '\n';
-    //]
 
-    //[print_value Print pointed value if any
     if (x) {
         std::cout << "*x: " << *x << '\n';
     } else {
         std::cout << "*x: empty" << '\n';
     }
-    //]
 
-    //[delete Delete value pointed
-    // - Forgetting to delete causes memory leaks
-    // - Forgetting to update to nullptr might lead to segmentation faults
-    // - Use smart pointers to delete the data automatically
+
+
     delete x;
     x = nullptr;
-    //]
+
 
     //[arrays_raw Raw dynamic arrays
     // - This is what existed before vectors

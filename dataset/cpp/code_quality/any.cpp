@@ -6,10 +6,7 @@
 int main() {
     std::cout << std::boolalpha;
 
-    //[any `std::any` is a container for single values of any type
-    // Be careful when using it
     std::any a = 1;
-    //]
 
     //[accessing_int Accessing values (int)
     std::cout << a.type().name() << ": " << std::any_cast<int>(a) << '\n';

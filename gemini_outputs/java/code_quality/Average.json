@@ -1,0 +1,6 @@
+{
+  "id": "Average",
+  "response": "1. Category: QUALITY\n- Explanation: The class name \"Average\" is generic and doesn't provide much context. A more descriptive name, like \"ArrayAverageCalculator\", would be better.\n- Why it’s a problem: Poor naming reduces code readability and maintainability.\n- How to fix it: Rename the class to something more specific, such as \"ArrayAverageCalculator\".\n\n2. Category: QUALITY\n- Explanation: The method name \"average\" is acceptable but could be more descriptive. \"calculateAverage\" or \"computeAverage\" might be preferable.\n- Why it’s a problem: Slightly less descriptive method name.\n- How to fix it: Rename the method to \"calculateAverage\" or \"computeAverage\".\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 1.65,
+  "memory_used_bytes": 8192
+}

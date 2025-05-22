@@ -11,7 +11,7 @@ const sumRandomAsyncNums = async() => {
     console.log(`Result ${first + second + third}`);
 
     if (await random()) {
-        // do something
+
     }
 
     const randos = Promise.all([

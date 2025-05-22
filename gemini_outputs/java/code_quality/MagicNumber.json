@@ -1,0 +1,6 @@
+{
+  "id": "MagicNumber",
+  "response": "1. Category: QUALITY\n   Explanation:\n   - What the issue is: The magic number 0.85 is used directly in the calculation.\n   - Why it’s a problem: It's not clear what this number represents (discount percentage). It makes the code harder to understand and maintain. If the discount needs to be changed, it requires finding and changing the number throughout the code.\n   - How to fix it: Define a constant for the discount rate. For example, `private static final double DISCOUNT_RATE = 0.15;` and `return price * (1 - DISCOUNT_RATE);` or `private static final double DISCOUNT_FACTOR = 0.85;` and `return price * DISCOUNT_FACTOR;`.\n\nTotal bugs: 0\nTotal quality issues: 1",
+  "response_time_sec": 1.25,
+  "memory_used_bytes": 114688
+}

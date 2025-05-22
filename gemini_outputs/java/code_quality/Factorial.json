@@ -1,0 +1,6 @@
+{
+  "id": "Factorial",
+  "response": "Category: BUG\n1. Explanation: Integer overflow can occur for larger values of 'n'.\n   - What the issue is: When 'n' is large enough, the factorial can exceed the maximum value that an `int` can hold, resulting in a negative or incorrect value due to integer overflow.\n   - Why it’s a problem: It leads to incorrect results without any indication of an error, potentially causing unexpected behavior in programs that rely on the factorial function.\n   - How to fix it: Use `long` as the return type to accommodate larger factorials. Consider adding a check for maximum input value before an overflow occurs, possibly throwing an exception or returning an error code.\n\nCategory: QUALITY\n1. Explanation: Lack of input validation.\n   - What the issue is: There's no validation to ensure that 'n' is non-negative. Factorial is not defined for negative integers in the typical mathematical sense.\n   - Why it’s a problem: Passing a negative integer will result in a `StackOverflowError` due to infinite recursion.\n   - How to fix it: Add a check at the beginning of the function to throw an `IllegalArgumentException` if 'n' is negative, or return an appropriate error code like -1 to indicate an invalid input.\n\nTotal bugs: 1\nTotal quality issues: 1",
+  "response_time_sec": 1.93,
+  "memory_used_bytes": 188416
+}

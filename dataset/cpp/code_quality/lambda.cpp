@@ -5,12 +5,12 @@
 #include <numeric>
 #include <vector>
 
-//[functor Defining a functor manually
+
 class add {
   public:
     double operator()(double left, double right) { return left + right; }
 };
-//]
+
 
 int main() {
     //[functor_call Calling a functor

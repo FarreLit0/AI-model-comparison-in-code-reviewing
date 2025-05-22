@@ -1,12 +1,12 @@
-#include <chrono> // std::chrono::seconds
-#include <ctime>  // clock_t, clock, CLOCKS_PER_SEC
+#include <chrono>
+#include <ctime>
 #include <iostream>
-#include <thread> // std::this_thread::sleep_for
+#include <thread>
 
 void very_expensive_function();
 
 int main() {
-    //[clock_fn std::clock function
+
     clock_t start, end;
     double cpu_time_used;
     start = clock();
@@ -14,7 +14,7 @@ int main() {
     end = clock();
     cpu_time_used = static_cast<float>(end - start) / CLOCKS_PER_SEC;
     std::cout << "cpu_time_used: " << cpu_time_used << " seconds" << '\n';
-    //]
+
 
     //[system_clock Modern C++ System Clock
     auto start2 = std::chrono::system_clock::now();

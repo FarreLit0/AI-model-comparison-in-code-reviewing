@@ -1,8 +1,7 @@
 #include <iostream>
 #include <unordered_map>
-//[headers Headers
 #include <tuple>
-//]
+
 
 //[return_ref Returning values by reference
 void reference_minmax(int a, int b, int &min, int &max) {

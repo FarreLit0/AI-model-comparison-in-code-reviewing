@@ -1,0 +1,6 @@
+{
+  "id": "average",
+  "response": "Category: QUALITY\n1. Explanation: Function name 'calculate_average' could be shortened to 'average' as the purpose is clear.\nWhy it’s a problem: Slightly verbose, and shorter names are generally preferred for commonly used functions.\nHow to fix it: Rename the function to 'average'.\n\nCategory: QUALITY\n2. Explanation: Type hinting for the $numbers parameter is missing.\nWhy it’s a problem: Without type hinting, the function could receive unexpected input types (e.g., a string or an object) which could lead to unexpected behavior or errors.\nHow to fix it: Add a type hint for the $numbers parameter, for example, `array` if only arrays are expected: `function calculate_average(array $numbers)`. If it should also accept other iterable types, use `iterable $numbers`.\n\nCategory: QUALITY\n3. Explanation: There is no documentation for the function.\nWhy it’s a problem: Documentation is very important for maintaining the codebase over time.\nHow to fix it: Add a phpdoc block above the function, explaining what the function does, the expected input and the return value.\n\nTotal bugs: 0\nTotal quality issues: 3",
+  "response_time_sec": 1.91,
+  "memory_used_bytes": 204800
+}

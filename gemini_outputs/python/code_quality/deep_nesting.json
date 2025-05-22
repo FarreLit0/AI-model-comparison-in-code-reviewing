@@ -1,0 +1,6 @@
+{
+  "id": "deep_nesting",
+  "response": "Category: QUALITY\n1. Explanation: The nested `if` statements can be simplified into a single `if` statement using boolean operators.\n    - Why it's a problem: Nested `if` statements can reduce readability and make the code harder to understand and maintain.\n    - How to fix it: Combine the conditions into one `if` statement using `and`: `if 0 < x < 10 and x % 2 == 1:`\n\nCategory: QUALITY\n2. Explanation: The function name `check` is not very descriptive.\n    - Why it's a problem: A vague function name makes it harder to understand the purpose of the function.\n    - How to fix it: Rename the function to something more descriptive, such as `print_if_odd_and_within_range`.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 1.26,
+  "memory_used_bytes": 36864
+}

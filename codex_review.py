@@ -8,9 +8,9 @@ import json
 openai.api_key = ""  # Use your actual API key here
 
 #Configuration
-snippet_id = "wrap"
-code_path = "dataset/python/bug/wrap.py"
-output_path = f"codex_outputs/python/bug/{snippet_id}.json"
+snippet_id = "comparator_bug"
+code_path = "dataset/javascript/bug/comparator_bug.js"
+output_path = f"codex_outputs/javascript/bug/{snippet_id}.json"
 
 #Load code from file
 with open(code_path, 'r', encoding='utf-8') as f:
@@ -18,7 +18,7 @@ with open(code_path, 'r', encoding='utf-8') as f:
 
 #Prompt for structured issue detection
 prompt = (
-    "Analyze the following python code and identify all issues.\n\n"
+    "Analyze the following javascript code and identify all issues.\n\n"
     "Group them into two categories:\n"
     "1. Bugs – Any logic errors, functional mistakes, incorrect behavior, or general programming bugs.\n"
     "2. Code quality issues – Bad practices, poor naming, redundancy, or maintainability problems.\n\n"

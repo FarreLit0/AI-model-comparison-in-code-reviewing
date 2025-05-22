@@ -1,0 +1,6 @@
+{
+  "id": "mutable_default",
+  "response": "Category: QUALITY\n1. Explanation: Defaulting mutable arguments to null is generally a better practice than using an empty array.\n   - What the issue is: While this code works as intended, using `null` as the default value for the `$list` argument is preferable.\n   - Why it’s a problem: Defaulting to `null` allows for easier detection of whether a list has been passed or not and it avoids potential issues if PHP ever changes how default array values are handled.\n   - How to fix it: Change the function signature to `function append_value($value, &$list = null)`\n\nCategory: QUALITY\n2. Explanation: Returning the list is redundant.\n   - What the issue is: The function returns the modified `$list` array, but since `$list` is passed by reference, the original variable outside the function is already modified.\n   - Why it’s a problem: It's unnecessary and adds a small amount of overhead. It also can lead to confusion as to why the return value is needed.\n   - How to fix it: Remove the `return $list;` line. The function will still work correctly because `$list` is passed by reference.\n\nTotal bugs: 0\nTotal quality issues: 2",
+  "response_time_sec": 2.18,
+  "memory_used_bytes": 40960
+}

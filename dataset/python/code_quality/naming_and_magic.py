@@ -1,3 +1,3 @@
 
 def calcArea(r):
-    return 3.14159 * r * r  # Poor naming + magic number
+    return 3.14159 * r * r

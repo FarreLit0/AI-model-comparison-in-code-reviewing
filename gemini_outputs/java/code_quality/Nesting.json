@@ -1,0 +1,6 @@
+{
+  "id": "Nesting",
+  "response": "1. Category: QUALITY\n   Explanation: The nested `if` statements are overly complex and reduce readability. Deeply nested structures are generally harder to understand and maintain.\n   Why it’s a problem: Makes the code harder to read and reason about. More prone to errors during modification.\n   How to fix it: Combine the conditions using logical AND operators (`&&`).\n\n2. Category: QUALITY\n   Explanation: The `check` method does not handle the cases where `x` is not positive, or is greater than or equal to 100, or is odd. There is no `else` to give feedback or perform specific actions in these scenarios.\n   Why it’s a problem: The method is not complete and leaves the user without feedback if a number is not even and between 0-100.\n   How to fix it: You could add an `else` statement, or modify the condition to take all numbers into account.\n\n3. Category: QUALITY\n   Explanation: There is no javadoc, or code documentation explaining what the function is, what the arguments are, and the return type.\n   Why it’s a problem: The purpose and functionality is not well communicated.\n   How to fix it: Write appropriate javadoc to improve readability and maintainability.\n\nTotal bugs: 0\nTotal quality issues: 3",
+  "response_time_sec": 2.08,
+  "memory_used_bytes": 53248
+}

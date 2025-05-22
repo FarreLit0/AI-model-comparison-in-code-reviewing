@@ -1,23 +1,19 @@
 function primeSummation(n) {
-    // Good luck!
-    //base case 
+
     let vecOfPrimes = [2]
     let total = 0
 
-    //Helper Function that will test if the number we are looking at is Prime or Not  
     function isPrime(arr, number) {
         var result = arr.every(function(e) {
             return number % e
         });
 
-        //If it is true then we will push the element into the array 
+
         if (result == true) {
             arr.push(number)
         }
     }
 
-    /* Use recursion to run the helper function repeatedly to get the nth
-    prime number up to the 10001st prime number */
     for (let i = 3; vecOfPrimes.length < 10001; i++) {
         isPrime(vecOfPrimes, i)
 

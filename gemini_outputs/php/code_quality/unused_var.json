@@ -1,0 +1,6 @@
+{
+  "id": "unused_var",
+  "response": "Category: QUALITY\n1. Explanation: The variable `$unused` is declared but never used within the function.\nWhy it’s a problem: It's unnecessary, clutters the code, and can be confusing for someone reading it. It gives the false impression it has a purpose.\nHow to fix it: Remove the line `$unused = 10;`.\n\nCategory: BUG\n1. Explanation: The `ask_number` function doesn't validate the input to ensure it's a number. It simply returns whatever the user enters as a string.\nWhy it’s a problem: If the calling code expects a number and receives a non-numeric string, it can lead to errors, unexpected behavior, or vulnerabilities.\nHow to fix it: Add input validation to check if the entered value is a number. Use `is_numeric()` or `filter_var()` with `FILTER_VALIDATE_INT` or `FILTER_VALIDATE_FLOAT` to ensure the input is a valid number, and prompt the user again if it's not.\n\nTotal bugs: 1\nTotal quality issues: 1",
+  "response_time_sec": 1.68,
+  "memory_used_bytes": 131072
+}
