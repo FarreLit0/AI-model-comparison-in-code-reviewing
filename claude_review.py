@@ -6,16 +6,16 @@ import os
 
 API_KEY = ""
 
-code_path = "dataset/python/bug/wrap.py"
-snippet_id = "wrap"
-output_path = f"claude_outputs/python/bug/{snippet_id}.json"
+code_path = "dataset/php/code_quality/nested.php"
+snippet_id = "nested"
+output_path = f"claude_outputs/php/code_quality/{snippet_id}.json"
 
 # Read code
 with open(code_path, "r", encoding="utf-8") as f:
     code = f.read()
 
 prompt = (
-    "Analyze the following python code and identify all issues.\n\n"
+    "Analyze the following php code and identify all issues.\n\n"
     "Group them into two categories:\n"
     "1. Bugs – Any logic errors, functional mistakes, incorrect behavior, or general programming bugs.\n"
     "2. Code quality issues – Bad practices, poor naming, redundancy, or maintainability problems.\n\n"
