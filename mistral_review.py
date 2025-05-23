@@ -8,9 +8,9 @@ import os
 client = Together(api_key="")
 
 # Setup paths
-code_path = "dataset/cpp/code_quality/tuples.cpp"
-snippet_id = "tuples"
-output_path = f"mistral_outputs/cpp/code_quality/{snippet_id}.json"
+code_path = "dataset/python/code_quality/next_permutation.py"
+snippet_id = "next_permutation"
+output_path = f"mistral_outputs/python/code_quality/{snippet_id}.json"
 
 # Read code
 with open(code_path, "r", encoding="utf-8") as f:
@@ -18,7 +18,7 @@ with open(code_path, "r", encoding="utf-8") as f:
 
 # Prompt
 prompt = (
-    "Analyze the following c++ code and identify all issues.\n\n"
+    "Analyze the following python code and identify all issues.\n\n"
     "Group them into two categories:\n"
     "1. Bugs – Any logic errors, functional mistakes, incorrect behavior, or general programming bugs.\n"
     "2. Code quality issues – Bad practices, poor naming, redundancy, or maintainability problems.\n\n"

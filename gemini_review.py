@@ -8,9 +8,9 @@ import os
 client = genai.Client(api_key="")
 
 # File and output setup
-code_path = "dataset/cpp/bug/grading.cpp"
-snippet_id = "grading"
-output_path = f"gemini_outputs/cpp/bug/{snippet_id}.json"
+code_path = "dataset/python/code_quality/next_permutation.py"
+snippet_id = "next_permutation"
+output_path = f"gemini_outputs/python/code_quality/{snippet_id}.json"
 
 # Load code
 with open(code_path, "r", encoding="utf-8") as f:
@@ -18,7 +18,7 @@ with open(code_path, "r", encoding="utf-8") as f:
 
 # Prompt
 prompt = (
-    "Analyze the following c++ code and identify all issues.\n\n"
+    "Analyze the following python code and identify all issues.\n\n"
     "Group them into two categories:\n"
     "1. Bugs – Any logic errors, functional mistakes, incorrect behavior, or general programming bugs.\n"
     "2. Code quality issues – Bad practices, poor naming, redundancy, or maintainability problems.\n\n"
