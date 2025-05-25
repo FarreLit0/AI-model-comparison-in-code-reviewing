@@ -10,7 +10,7 @@ openai.api_key = ""
 #Configuration
 snippet_id = "next_permutation"
 code_path = "dataset/python/code_quality/next_permutation.py"
-output_path = f"gpt_outputs/python/code_quality/{snippet_id}.json"
+output_path = f"openai_outputs/python/code_quality/{snippet_id}.json"
 
 #Load code from file
 with open(code_path, 'r', encoding='utf-8') as f:
