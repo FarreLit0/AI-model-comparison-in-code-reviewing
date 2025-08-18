@@ -4,7 +4,7 @@ import psutil
 import os
 import json
 
-#Your OpenAI API Key
+#OpenAI API Key
 openai.api_key = ""
 
 #Configuration

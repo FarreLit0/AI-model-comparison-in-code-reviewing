@@ -4,13 +4,14 @@ import psutil
 import json
 import os
 
+
 API_KEY = ""
 
 code_path = "dataset/python/code_quality/next_permutation.py"
 snippet_id = "next_permutation"
 output_path = f"claude_outputs/python/code_quality/{snippet_id}.json"
 
-# Read code
+
 with open(code_path, "r", encoding="utf-8") as f:
     code = f.read()
 

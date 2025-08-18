@@ -4,7 +4,7 @@ import psutil
 import json
 import os
 
-# API key from Google AI Studio
+# API key 
 client = genai.Client(api_key="")
 
 # File and output setup

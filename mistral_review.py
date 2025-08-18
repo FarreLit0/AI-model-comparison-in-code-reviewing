@@ -4,7 +4,7 @@ import psutil
 import json
 import os
 
-# Auth
+# API Key
 client = Together(api_key="")
 
 # Setup paths
@@ -16,7 +16,7 @@ output_path = f"mistral_outputs/python/code_quality/{snippet_id}.json"
 with open(code_path, "r", encoding="utf-8") as f:
     code = f.read()
 
-# Prompt
+#Prompt for structured issue detection
 prompt = (
     "Analyze the following python code and identify all issues.\n\n"
     "Group them into two categories:\n"
